@@ -40,7 +40,7 @@ Displays an alert upon successful submission
 ## 📌 Getting Started
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone  https://github.com/Sakshisi3/portfolio-website.git
 
 2. Open index.html in a browser.
 
