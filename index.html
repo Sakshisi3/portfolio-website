@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Registration Section -->
+<div class="register-container" id="registerBox">
+    <h2>Register</h2>
+    <input type="text" id="registerUsername" placeholder="Create Username">
+    <input type="password" id="registerPassword" placeholder="Create Password">
+    <button onclick="handleRegister()">Register</button>
+    <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+</div>
+
+<!-- Login Section -->
+<div class="login-container" id="loginBox" style="display: none;">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="handleLogin()">Login</button>
+    <p>Don't have an account? <a href="#" onclick="showRegister()">Register here</a></p>
+</div>
+
+
+    <!-- Portfolio Content -->
+    <div id="portfolioContent" class="portfolio-content" style="display: none;">
+        <h1>Welcome to My Portfolio</h1>
+    <img src="profile.jpg" alt="Profile Photo">
+    <p>Hello! I'm <strong>Sakshi Singh</strong>, a passionate web developer.</p>
+    <p>Email: <a href="mailto:sakshisi1303@gmail.com">sakshisi1303@gmail.com</a></p>
+        <button onclick="showSections()">Explore</button>
+        
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#profileSection" class="nav-link">Profile</a></li>
+                <li><a href="#skillsSection" class="nav-link">Skills</a></li>
+                <li><a href="#projectsSection" class="nav-link">Projects</a></li>
+                <li><a href="#contactSection" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Sections -->
+    <div id="profileSection" class="section" style="display: none;">
+        <h2>My Profile</h2>
+        <img src="your-profile-photo.jpg" alt="Profile Photo" class="profile-img">
+    </div>
+
+    <div id="skillsSection" class="section" style="display: none;">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Next.js</div>
+            <div class="skill-card">Redux</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">MongoDB</div>
+            <div class="skill-card">Express.js</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">SCSS</div>
+
+        </div>
+    </div>
+
+    <div id="projectsSection" class="section" style="display: none;">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            
+            <div class="project-card">Portfolio Website</div>
+            <div class="project-card">E-commerce Website</div>
+            <div class="project-card">Study Sync Website</div>
+            
+
+            
+        </div>
+    </div>
+
+    <div id="contactSection" class="section" style="display: none;">
+        <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sakshisi1303@gmail.com">sakshisi1303@gmail.com</a></p>
+        <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
